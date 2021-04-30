@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    /* ### Primary */
+
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+
+    /* ### Neutral */
+
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    width: 100%;
+    background-color: var(--Light-Gray);
+    color: var(--Grayish-Blue);
+    height: 100vh;
+
+
+}
+
+*h1,
+h3,
+h4 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+    color: var(--Bright-Yellow);
+    margin: 0.9em 0;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+
+}
+.topsec{
+  background-color: #fff;
+    padding: 30px;
+    border-radius: 10px 10px 0 0;
+}
+.bottomsec{
+  display: flex;
+    color: var(--Light-Gray);
+
+}
+.left{
+  background-color: var(--Cyan);
+    width: 100%;
+    padding: 30px;
+    border-radius: 0 0 0 10px;
+}
+.right{
+  background-color: hsl(179, 62%, 50%);
+  width: 100%;
+  padding: 30px;
+  border-radius: 0 0 10px 0;
+}
+.join{
+  color: var(--Cyan);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.para{
+  width: 90%
+}
+.dollar {
+  display: flex;
+  align-items: center;
+}
+
+.per {
+  padding-left: 10px;
+}
+.sign_btn {
+    background-color: var(--Bright-Yellow);
+    color: white;
+    display: inline-block;
+    padding:10px 100px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 5px;
+    margin-left: 10px;
+
+  }
+.sign_btn:hover{
+  background-color: var(--Grayish-Blue);
+}
+.why_us {
+    margin-bottom: 15px;
+}
+@media(max-width:1100px) {
+
+    body {
+        font-size: 0.8rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    #main {
+        width: 85%;
+        margin: 10em auto;
+
+    }
+
+    .topsec {
+        padding: 3em 2em;
+    }
+
+    .para {
+        width: 100%;
+    }
+
+    .bottomsec {
+        flex-direction: column;
+    }
+
+    .left {
+        border-radius: 0;
+    }
+
+    .sign_btn {
+        display: block;
+    }
+    .right {
+        border-radius: 0 0 10px 10px;
+    }
+}
